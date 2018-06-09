@@ -1,0 +1,3 @@
+.user-nickname{
+  text-align: center;display: block;
+}

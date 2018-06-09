@@ -1,5 +1,5 @@
-<swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<swiper indicator-dots="true"
+  autoplay="true" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
       <image src="{{item}}" bindload="imageLoad"   class="slide-image"
@@ -8,3 +8,11 @@
     </swiper-item>
   </block>
 </swiper>
+<view class='container'>
+<block >
+<image  class="background" src="{{ bkimg }}" mode="aspectFill"/>    <view class="summary">
+      <text class="label">{{title}}</text>
+      <text class="content">{{ summary }}</text>
+    </view>
+</block>
+</view>

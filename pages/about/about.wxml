@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="header">
+    <text class="title">{{ title }}</text>
+  </view>
+  <view class="user" bindtap="getUserInfo">
+    <image class="user-avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFit"/>
+    <text class="user-nickname">{{ userInfo.nickName }}</text>
+  </view>
+</view>

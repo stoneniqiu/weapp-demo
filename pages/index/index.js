@@ -5,8 +5,6 @@ Page({
       'images/slide2.jpg',
       'images/slide3.jpg',
     ],
-    indicatorDots: false,
-    autoplay: false,
     interval: 5000,
     duration: 1000,
     //所有图片的高度  
@@ -14,7 +12,11 @@ Page({
     //图片宽度  
     imgwidth: 750,
     //默认  
-    current: 0  
+    current: 0,
+    //介绍部分
+    title:"公司简介",
+    bkimg:"images/bk.jpg",
+    summary:"芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所"
   },
   imageLoad: function (e) {
     //获取图片真实宽度  

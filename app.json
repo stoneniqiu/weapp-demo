@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/about/about",
     "pages/logs/logs"
   ],
   "window":{
@@ -22,7 +23,7 @@
       "iconPath": "images/search.png",
       "selectedIconPath": "images/search-actived.png"
     },{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/about/about",
       "text": "我们",
      "iconPath": "images/profile.png",
     "selectedIconPath": "images/profile-actived.png"
