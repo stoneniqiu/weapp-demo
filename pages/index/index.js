@@ -24,7 +24,7 @@ Page({
       imgheight = e.detail.height,
       //宽高比  
       ratio = imgwidth / imgheight;
-    console.log(imgwidth, imgheight)
+    //console.log(imgwidth, imgheight)
     //计算的高度值  
     var viewHeight = 750 / ratio;
     var imgheight = viewHeight
@@ -36,7 +36,7 @@ Page({
     })
   },
   bindchange: function (e) {
-    console.log(e.detail.current)
+    //console.log(e.detail.current)
     this.setData({ current: e.detail.current })
   }  
 })

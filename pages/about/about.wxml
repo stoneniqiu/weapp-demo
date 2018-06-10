@@ -1,9 +1,9 @@
-<view class="container">
-  <view class="header">
-    <text class="title">{{ title }}</text>
-  </view>
+<view class="container short">
+  <image class="user-avatar" class="user-avatar" src="{{ userInfo.avatarUrl }}"  />
+    <text class="title">{{ userInfo.nickName }}</text>
+ 
   <view class="user" bindtap="getUserInfo">
-    <image class="user-avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFit"/>
-    <text class="user-nickname">{{ userInfo.nickName }}</text>
+    <image  src="{{ company.avatarUrl }}" mode="aspectFit"/>
+    <text class="user-nickname">{{ company.nickName }}</text>
   </view>
 </view>

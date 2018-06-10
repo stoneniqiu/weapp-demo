@@ -8,3 +8,7 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.container.short{
+  padding: 100rpx 0;
+
+}
