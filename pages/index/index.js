@@ -38,5 +38,15 @@ Page({
   bindchange: function (e) {
     //console.log(e.detail.current)
     this.setData({ current: e.detail.current })
-  }  
+  },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '欢迎光临芊诺私人美容会所',
+      path: 'pages/index/index'
+    }
+  }
 })

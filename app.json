@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/about/about",
+    "pages/location/location",
     "pages/logs/logs"
   ],
   "window":{
@@ -18,8 +19,8 @@
     "selectedIconPath": "images/board-actived.png"
     },
     {
-      "pagePath": "pages/index/index",
-      "text": "电话",
+      "pagePath": "pages/location/location",
+      "text": "位置",
       "iconPath": "images/search.png",
       "selectedIconPath": "images/search-actived.png"
     },{

@@ -9,7 +9,7 @@ Page({
     title: 'About',
     company: {
       nickName: '欢迎关注芊诺美容私人会所',
-      avatarUrl: '../../images/qrcode.jpg'
+      avatarUrl: '../../images/yy.png'
     },
     userInfo:{}
   },
