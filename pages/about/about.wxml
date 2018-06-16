@@ -3,7 +3,7 @@
     <text class="title">{{ userInfo.nickName }}</text>
  
   <view class="user" bindtap="getUserInfo">
-    <image  src="{{ company.avatarUrl }}" mode="aspectFit"/>
+    <image  src="{{ company.avatarUrl }}"  bindtap="previewImage"  mode="aspectFit"/>
     <text class="user-nickname">{{ company.nickName }}</text>
   </view>
 </view>
