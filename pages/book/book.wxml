@@ -1,0 +1,12 @@
+<view class='bookpage'>
+<view class='bookitem'>
+<label>电话预约：</label>
+<button bindtap="call" type='primary' >{{tel}}</button>
+</view>
+<view class='bookitem'>
+<label>微信预约：</label>
+  <view class="user" >
+    <image  src="{{ company.avatarUrl }}"  bindtap="previewImage"  mode="aspectFit"/>
+  </view>
+</view>
+</view>

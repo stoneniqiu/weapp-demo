@@ -1,37 +1,10 @@
 Page({
-  data: {
-    imgUrls: [
-      { url: 'images/slide1.jpg', id: 1 },
-      { url: 'images/slide2.jpg', id: 2 },
-      { url: 'images/slide3.jpg',id:3}
-    ],
-    interval: 5000,
-    duration: 1000,
-    //所有图片的高度  
-    imgheights: [],
-    //图片宽度  
-    imgwidth: 750,
-    //默认  
-    current: 0,
-    Hei: ""     ,     //这是swiper要动态设置的高度属性,
-    //介绍部分
-    title:"公司简介",
-    bkimg:"images/bk.jpg",
-    summary:"芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所"
-  },
-   
-  imgH: function (e) {
-    var winWid = wx.getSystemInfoSync().windowWidth;         //获取当前屏幕的宽度
-    var imgh = e.detail.height;　　　　　　　　　　　　　　　　//图片高度
-    var imgw = e.detail.width;
-    var swiperH = winWid * imgh / imgw + "px"　　　　　　　　　　//等比设置swiper的高度。  即 屏幕宽度 / swiper高度 = 图片宽度 / 图片高度    ==》swiper高度 = 屏幕宽度 * 图片高度 / 图片宽度
-    this.setData({
-      Hei: swiperH　　　　　　　　//设置高度
+  previewImage: function (e) {
+    console.log(e.target);
+    wx.previewImage({
+      current: 'http://images.cnblogs.com/cnblogs_com/stoneniqiu/602555/o_s.jpg', // 当前显示图片的http链接     
+      urls: ['http://images.cnblogs.com/cnblogs_com/stoneniqiu/602555/o_s.jpg'] // 需要预览的图片http链接列表     
     })
-  },
-  bindchange: function (e) {
-    //console.log(e.detail.current)
-    this.setData({ current: e.detail.current })
   },
   onShareAppMessage: function (res) {
     if (res.from === 'button') {

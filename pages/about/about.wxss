@@ -1,5 +1,75 @@
 .user-nickname{
   text-align: center;display: block;
 }
-.user-avatar{width: 50px;height: 50px;border-radius: 50%;display: block;}
-.title{display: block;text-align: center;color: #333;}
+.user-avatar{width: 80px;height: 80px;border-radius: 50%;display: block;}
+.avatar-box{
+  border: 1px solid gainsboro;
+  padding: 10rpx;
+  box-shadow: 0 0 10rpx ;
+  border-radius: 50%;
+}
+.title{display: block;text-align: center;color: #333;margin-top: 10px;}
+.linkbox{
+  display: flex;
+  padding: 10px 10%;
+}
+.linkbox navigator{
+  flex: 1;
+  text-align: center;
+  color: gray;
+  font-size: small;
+}
+.linklist{
+  padding: 10px 5%;
+}
+.linklist navigator,button{
+  color: gray;
+  font-size: small;
+  display: block;
+  padding: 10px 6%;
+  border-bottom: 1px solid  gainsboro;
+  text-align: left;
+  position: relative;
+}
+ 
+.icon,.rightar{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.rightar{position: absolute;
+ right: 5px;
+ bottom: 5px;
+}
+.icon.s{
+  width: 18px;height: 18px;
+}
+.cs_button{
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+  border-radius: 0;
+  position: relative;
+  display: block;
+}
+ .cs_button .icon{
+  vertical-align:middle;
+ }
+
+.linklist navigator:after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right:5px;
+  background-size: contain;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABQ1JREFUaAXVWVtvGkcU3l2W4LuBZY1jx8ZcaorBTqgvalKpUl/yDxxVlXL5Kf4lea7kH9BXPzl2bZTKCo0U4YioDqRgwxrbXOzdmZ4DnghZlYDZXWjngdk57Mx835yZc86cFYT/eXHw4A+HV6bc7snI3NzMdaFQqPOMYVUfqdeBtra2JF2vrxqGNF+p6E+CwYS/1zGsfF/kGSwYjP1oGHTyti+VJMdhNpv+wjOW2T49awAn9HpHDgVBrN1OLhJirEWj0RmzYHj6c52BfD5/s7T0Tf7ysgbbR7wHE4u6Ls74fNO1crlQ4QHC24eLAE52cnKiezzLeUG4YCQEQsi016s2NO30nBdQr/24CeBEmpbVVXUjT6mmUiq4UAa13+1Wbs7PzzRs211MEUBwpVLGmJ315w1DQBJDLcDilKpOG6VSofyfJ4AAi8WiEQ4HctUqUUAHwygzDKIqik8ol0/PsG1XMa0BBgwONkkm4zlNu/SCbATlhAg+j+e+pGmFU/ae1bVlBBBYNpslT5/+lMvlCh5oNklQSpTJSb98fl4sWg0ex+NyZJ2AbG5uOg4O0mtglabYu7IsZI+P378TRZEymRU1lyPrNPH29rbx6tWzA1kmX72zrgsLoVB0hVJq6aJZOthdYhg3vX79axLkX720KEonEHb8YZUmbCWAhHDFFxbij+AsPGAEnU4h9/z5z2+BIGEy3tp2AggMSYRC3y4bhhhgQHF7vXjxS8osib4QYKDD4Vji5oYGWVuSpML6evwQzwyT9VpbakY7TQ5OrYAmFXSCvgI1M4omN5lMfEET3Kn/v/3fVwIIAP0BOjf0D7eARsrlCyWZXM7zkOg7AQSNnllRVIqeukVCHC6Xa75IZB4cer4nTQyEAIKG7VSamJg2RJGoLRJ0uNHQVQwMMbZqyTr/DowAQqtUCmUMvSEgaHpsjGZ1nfp9vvU8Rrmd4QvCQAkgQLw3KIq/TgidxnbrXnExpmnFz9juVGwJJTpNevd/j2foVJKEayYnRB9lz51qMGmDLfF4fKxYrD4GFHi3FiDEILJ8L90tqoFqIBr9YbxaNZ7Axmne5FrgnQfHx0eFbgn01RO3gwqFVicJufoeTClbecPlGvn9w4dUT5efgRBYWHjkFoQagBedSAp2jT425txPp9OldpLdPPd9C8Ge91JafczASxK9mZhw7fGAb5LvhqVV7ywurvoajeoGxEBN842WR5JG9z5+THHnkfqmgUgkqd4F73Ipu2bA900DmMHG/Cms/O2CifXxcekNbJtLs9q1XQOxWOy+YejrbeBrbrdz1wrwSN5WAouLD2evrugqzHNr7UhVVUd2j46OrsyuPOtvG4FwODFXrze+Y+Ahm3I1O6vsplKpKpvcitoWPwAfQALwAWSFAQRrcyHLwTeZzG8NJrOqtpxAILASpPQ6wQAC+Ios63uZTMZy8DiHpVsoHI5H2sGD0YFQeXTXLvBIwDINQNpkEbJvURy0VRxlVR3ahz0PFxb7iiUaCAQSsXbwoiichULqnt3gcVlME4hEluKU6hG2xpIkFjc2lvd3dnZ0JrOz5t5C4JhETFRh0pYBdDgcf6+tLaXMJKrYWN3WXBpA8BAePGwHL8s0//LlpqksW7eg29/j0gDmOdvBw03qczb751urMs7tADs996wBTJlDknaeDQxf6f8aFHjEwKWBYDC6Qoj0AOx89tOnd+8HsfJsAblrPAfcnS3s+A+SegzXKV4dmwAAAABJRU5ErkJggg==')
+}
+button.cs_button:after{
+  border-radius: 0;
+  border-width: 0 0 0 0;
+}
+button:active{
+  background-color: gainsboro;
+}

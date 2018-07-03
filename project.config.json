@@ -1,5 +1,8 @@
 {
 	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
@@ -8,9 +11,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.1",
+	"libVersion": "2.0.4",
 	"appid": "wx4489d2d823069411",
-	"projectname": "douban",
+	"projectname": "%E4%BC%9A%E6%89%80",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

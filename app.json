@@ -1,50 +1,37 @@
 {
-  "pages": [
-    "pages/splash/splash",
-    "pages/board/board",
-    "pages/list/list",
-    "pages/item/item",
-    "pages/search/search",
-    "pages/profile/profile"
+  "pages":[
+    "pages/index/index",
+    "pages/about/about",
+    "pages/book/book",
+    "pages/brief/brief",
+    "pages/location/location",
+    "pages/logs/logs"
   ],
-  "window": {
-   "navigationStyle":"custom",
-    "navigationBarBackgroundColor": "#40586d",
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "电影 « 豆瓣",
-    "backgroundColor": "#f8f9fb",
-    "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": false
+  "window":{
+      "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "芊诺美疗私人会所",
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#666666",
-    "selectedColor": "#000000",
-    "borderStyle": "white",
-    "backgroundColor": "#f8f9fb",
-    "list": [
-      {
-        "text": "榜单",
-        "pagePath": "pages/board/board",
-        "iconPath": "images/board.png",
-        "selectedIconPath": "images/board-actived.png"
-      },
-      {
-        "text": "搜索",
-        "pagePath": "pages/search/search",
-        "iconPath": "images/search.png",
-        "selectedIconPath": "images/search-actived.png"
-      },
-      {
-        "text": "我的",
-        "pagePath": "pages/profile/profile",
-        "iconPath": "images/profile.png",
-        "selectedIconPath": "images/profile-actived.png"
-      }
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+    "iconPath": "images/m.png",
+    "selectedIconPath": "images/m1.png"
+    },
+    {
+      "pagePath": "pages/book/book",
+      "text": "预约",
+      "iconPath": "images/b.png",
+      "selectedIconPath": "images/b1.png"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "我的",
+     "iconPath": "images/wd.png",
+    "selectedIconPath": "images/wd1.png"
+    }
     ]
-  },
-  "networkTimeout": {
-    "request": 20000,
-    "downloadFile": 20000
-  },
-  "debug": false
+  }
 }
+     

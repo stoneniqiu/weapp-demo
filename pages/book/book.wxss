@@ -1,0 +1,10 @@
+.bookpage{
+  padding: 10px;
+}
+
+.bookitem{
+  margin-bottom: 20px;
+ padding-bottom: 10px;
+ border-bottom: 1px dashed  gainsboro;
+}
+.bookitem label{color: #333;margin-bottom: 5px;display: block;}

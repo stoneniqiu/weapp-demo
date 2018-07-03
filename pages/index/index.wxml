@@ -1,39 +1,4 @@
-<swiper indicator-dots="true"
-  autoplay="true" interval="{{interval}}" duration="{{duration}}"  style='height:{{Hei}}' >
-  <block wx:for="{{imgUrls}}" wx:key="id">
-    <swiper-item >
-      <image src="{{item.url}}" mode="widthFix"  bindload="imgH"   class="slide-image" />
-    </swiper-item>
-  </block>
-</swiper>
-<view class='container short'>
-<block >
-<image  class="background" src="{{ bkimg }}" mode="aspectFill"/>    <view class="summary">
-      <text class="label"> 晁阳佳&芊诺私人美疗会所简介：</text>
-      <text class="content">
-     晁阳佳&芊诺私人美疗会所是一家以综合个性化私人定制为核心的理念，以特色的核心技术为特色，安全、有效的优质产品为根本，精准的针对客户不同的问题需求、标准、体质等，为其制定独特的健康调理和保养理念。
-     “芊诺”以创始人的女儿命名，会以待女儿般的用心程度对待其会所，进入美容行业多年以来，拥有丰富的市场运营能力、行业顶尖人脉资源、敏锐的市场洞察力、扎实的行业专业知识等服务客户，为其打造一个专业的私人美疗会所！打造成以特色技术美疗、美容、养生、健康调理、公益讲座、修身养性的文化交流平台。
- <!-- </text>
-<view class='imgbox'>
-<image src='images/actv.jpg' />
-</view>
- <text class="content"> -->
-美容院项目定位：
-面部个性化定制：
-1、特色问题性皮肤调理
-  （雀斑、老年斑、真皮斑、黄褐斑、青春痘、痤疮、扁平疣、猴子跳、黄睑疣、痣、胎记、毛孔粗大等问题性皮肤）
-2、高端逆龄抗衰美疗组合
-  （皱纹、松弛、黑眼圈、眼袋、太阳穴、全脸抗衰）
-   身体个性化定制：1、特色技术精准靶向调理
-   特色头疗、肩颈、肾部、胸部、臀疗
-   特色拔湿、排寒 
-3、古方纤体瘦身打造
-4、艾灸养生文化
-5、胸部保养、妇科调理
-   私 密：1、耻骨闭合 2、私密紧致
-6、改善性冷淡、炎症、月经异常等
-
-美容院客户定位：首先以利他思维，以认同“正确养生、正确美容”的理念，积极、坚持、配合，达到客有所需的结果！</text>
-    </view>
-</block>
+<view class="imgbox">
+<image class="img" bindtap="previewImage" src="images/actv.jpg" mode="widthFix">
+ </image>
 </view>

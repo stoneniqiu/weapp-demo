@@ -1,8 +1,4 @@
 /* pages/location/location.wxss */
-.imgbox{padding: 20px; overflow: hidden;}
-.img{
-  display: block;
-  width:100%;
-}
+
 .address{color: #333;text-align: left; 
 display:block;margin:10px 0;font-size: small;}

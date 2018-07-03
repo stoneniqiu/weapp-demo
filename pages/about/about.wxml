@@ -1,4 +1,31 @@
-<view class="container short">
+
+<view wx:if="{{isAuth}}" class="container short">
+    <view class='avatar-box'>
+    <image class="user-avatar"  src="{{ userInfo.avatarUrl }}"  />
+    </view>
+    <text class="title">{{ userInfo.nickName }}</text>
+</view>
+ <button  wx:if="{{!isAuth}}"  open-type="getUserInfo">授权登录</button>
+ 
+<view class='linklist'>
+
+  <navigator  url="/pages/brief/brief"  >
+  <image class='icon s' src='../../images/ms.png'></image> 
+  关于芊诺美疗</navigator>
+    <navigator  url="/pages/location/location"  >
+  <image class='icon s' src='../../images/w1.png'></image> 
+  门店位置</navigator>
+      <button class="cs_button"   open-type="contact"  
+  session-from="weapp"
+>
+  <image class='icon' src='../../images/cs.png'></image> 
+客服
+    <image  src="../../images/arrowright.png"  class='rightar' />
+
+</button > 
+</view>
+
+<!-- <view class="container short">
   <image class="user-avatar" class="user-avatar" src="{{ userInfo.avatarUrl }}"  />
     <text class="title">{{ userInfo.nickName }}</text>
  
@@ -6,12 +33,9 @@
     <image  src="{{ company.avatarUrl }}"  bindtap="previewImage"  mode="aspectFit"/>
     <text class="user-nickname">{{ company.nickName }}</text>
   </view>
+  
+ <button  wx:if="{{!isAuth}}"  open-type="getUserInfo">授权登录</button>
 
-  <!-- <contact-button 
-  type="default-light" 
-  size="20"
-  session-from="weapp"
->
-客服
-</contact-button> -->
 </view>
+
+ -->
