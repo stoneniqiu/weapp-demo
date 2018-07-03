@@ -1,8 +1,5 @@
 {
 	"description": "项目配置文件。",
-	"packOptions": {
-		"ignore": []
-	},
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
@@ -11,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wxf91be4b7deb57aa9",
-	"projectname": "Reading",
+	"libVersion": "1.9.1",
+	"appid": "wx4489d2d823069411",
+	"projectname": "douban",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

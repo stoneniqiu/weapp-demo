@@ -1,1 +1,6 @@
-<map id="map" longitude="113.016122" latitude="28.119998" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<view class='imgbox'>
+<image class='img' bindtap="previewImage"  src='images/actv.jpg' />
+
+<text class='address'>地址：长沙市 天心区 新世纪花苑红龙居2408房（贺龙体育馆旁）</text>
+<map id="map" longitude="112.991562" latitude="28.18116" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"   bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+</view>

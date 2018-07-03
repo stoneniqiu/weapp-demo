@@ -1,9 +1,9 @@
 Page({
   data: {
     imgUrls: [
-      'images/slide1.jpg',
-      'images/slide2.jpg',
-      'images/slide3.jpg',
+      { url: 'images/slide1.jpg', id: 1 },
+      { url: 'images/slide2.jpg', id: 2 },
+      { url: 'images/slide3.jpg',id:3}
     ],
     interval: 5000,
     duration: 1000,
@@ -13,26 +13,20 @@ Page({
     imgwidth: 750,
     //默认  
     current: 0,
+    Hei: ""     ,     //这是swiper要动态设置的高度属性,
     //介绍部分
     title:"公司简介",
     bkimg:"images/bk.jpg",
     summary:"芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所芊诺美疗私人会所"
   },
-  imageLoad: function (e) {
-    //获取图片真实宽度  
-    var imgwidth = e.detail.width,
-      imgheight = e.detail.height,
-      //宽高比  
-      ratio = imgwidth / imgheight;
-    //console.log(imgwidth, imgheight)
-    //计算的高度值  
-    var viewHeight = 750 / ratio;
-    var imgheight = viewHeight
-    var imgheights = this.data.imgheights
-    //把每一张图片的高度记录到数组里  
-    imgheights.push(imgheight)
+   
+  imgH: function (e) {
+    var winWid = wx.getSystemInfoSync().windowWidth;         //获取当前屏幕的宽度
+    var imgh = e.detail.height;　　　　　　　　　　　　　　　　//图片高度
+    var imgw = e.detail.width;
+    var swiperH = winWid * imgh / imgw + "px"　　　　　　　　　　//等比设置swiper的高度。  即 屏幕宽度 / swiper高度 = 图片宽度 / 图片高度    ==》swiper高度 = 屏幕宽度 * 图片高度 / 图片宽度
     this.setData({
-      imgheights: imgheights,
+      Hei: swiperH　　　　　　　　//设置高度
     })
   },
   bindchange: function (e) {

@@ -39,7 +39,7 @@
   font-size: 22rpx;
   padding: 2em;
 }
- 
+
 .background {
   position: fixed;
   left: 0;
@@ -49,14 +49,5 @@
   height: 100%;
   width: 100%;
   z-index: -1000;
-  opacity: .15;
-}
-.slide-image{
-  width: 100%;
-}
-.imgbox{text-align: center;display: block;overflow: hidden;}
-.imgbox img{
-  display: block;
-  width:90%;
-  height: auto;
+  opacity: .1;
 }
